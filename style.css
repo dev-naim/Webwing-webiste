@@ -1,0 +1,620 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1172px;
+}
+section span {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f2db18;
+}
+.section-title h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #154492;
+    margin-top: 10px;
+}
+.ankor-after a{
+    margin-top: 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+}
+.ankor-after a::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 142px;
+    height: 1px;
+    width: 100px;
+    background: #f2db18;
+}
+body {
+    color: #090909;
+    background: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #1f1f1f;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+ul, ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* -------------preloader Section start------------- */
+.loader_bg {
+    position: fixed;
+    z-index: 999;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+}
+.loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader img {
+    width: 250px;
+}
+
+/* -------------preloader Section end------------- */
+/* ===== header Section start here ======== */
+.header-top {
+    background: #032154;
+    color: #FFF;
+    padding: 12px 0;
+}
+ul.lan li {
+    font-size: 17px;
+}
+.select-box select {
+    background: #032154;
+    border: none;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+.social-icon ul{}
+.social-icon ul li{
+    padding-right: 11px;
+}
+.social-icon ul li a i{
+    display: inline-block;
+    color: #fff;
+    font-size: 19px;
+    transition: all 0.3s ease-in-out;
+}
+.social-icon ul li a:hover i{
+    color: #f2db18;
+}
+/* header middle */
+.header-middle {
+    padding: 45px 0;
+    background: #fff;
+    
+}
+.header-middle-lft ul li a,.header-middle-right ul li a{
+    font-size: 17px;
+    font-weight: 700;
+}
+.header-middle-lft ul li a:hover,.header-middle-right ul li a:hover{
+    color: #f2db18;
+}
+.header-middle-lft ul li a i, .header-middle-right ul li a i{
+    display: inline-block;
+    color: #f2db18;
+    margin-right: 7px;
+    
+}
+.header-middle-logo {
+    text-align: center;
+}
+/* header bottom */
+
+.header-bottom {
+    background: #032154;
+}
+.header-bottom .navbar {
+    padding: 0;
+}
+.navbar-nav .nav-item .nav-link {
+    margin: 0 8px;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 25px 22px;
+    line-height: 20px;
+}
+.navbar-nav .nav-item .nav-link:focus,
+.navbar-nav .nav-item .nav-link:hover{
+    background: #f2db18;
+    color: #fff;
+}
+
+.header-bottom .navbar .navbar-nav .active>.nav-link,
+.header-bottom .navbar .navbar-nav .nav-link.active,
+.header-bottom .navbar .navbar-nav .nav-link.show,
+.header-bottom .navbar .navbar-nav .show>.nav-link {
+    background: #f2db18;
+    color: #fff;
+}
+.header-bottom ul.sign{
+    padding-top: 21px;
+}
+.header-bottom ul.sign li a{
+    color: #fff;
+    font-size: 18px;
+}
+.header-bottom ul.sign li a i{
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+}
+.header-bottom ul.sign li a.sign-btn {
+    background: #f2db18;
+    padding: 13px 26px;
+    text-decoration: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+.header-bottom ul.sign li a.sign-btn:hover {
+   background: #000;
+}
+/* ===== header Section End here ======== */
+
+/* main start */
+/* ===== Banner Section Start Here ====== */
+.banner-section {
+    padding-top: 60px;
+    background: url(images/banner.jpg) no-repeat center center / 100% 100%;
+}
+.banner-lft {
+    padding-top: 120px;
+}
+.banner-lft h1 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+}
+.banner-lft span {
+    display: inline-block;
+    font-size: 30px;
+    color: #f2db18;
+    font-weight: bold;
+}
+.banner-lft p {
+    font-size: 17px;
+    color: #fff;
+    margin-top: 10px;
+}
+.banner-lft a{
+    margin-top: 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+}
+
+.banner-lft a::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 142px;
+    height: 1px;
+    width: 100px;
+    background: #f2db18;
+}
+
+/* ===== Banner Section End Here ====== */
+
+/* ===== About Section Start Here ====== */
+.about-section {
+    padding: 90px 0;
+}
+.about-left h1 {
+    font-weight: bold;
+    font-size: 37px;
+    color: #154492;
+    margin-top: 10px;
+}
+.about-left h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 23px 0;
+}
+.about-left p {
+    font-size: 17px;
+    margin: 30px 0;
+    line-height: 27px;
+}
+.about-left a {
+    padding: 15px 30px;
+    background: #f2db18;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+.about-left a:hover {
+    background: #000;
+}
+.about-image img{
+    width: 100%;
+}
+.about-btn {
+    display: inline-block;
+}
+/* ===== About Section End Here ====== */
+
+/* ===== Service Section Start Here ==== */
+.service-item h3 {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #323639;
+    border-bottom: 3px solid #020001;
+    display: inline-block;
+    padding-bottom: 6px;
+    transition: all 0.3s ease-in;
+}
+.service-item p{
+    font-size: 17px;
+    color: #323639;
+    margin-top: 9px;
+}
+.service-item:hover h3{
+    color: #f2db18;
+}
+/* ===== Service Section Ends Here ==== */
+
+/* ===== Portfolio Section Start Here ==== */
+
+/* Nicher Ei style ta must lagbe . else image slider unvisible Thakbe */
+.portfolio .portfolio_Carousel .carousel-caption {
+    position: inherit;
+    padding: 0;
+}
+.portfolio-para .port-img{
+    position: relative;
+    
+}
+.port-img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(242, 219, 24,0.5);
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+  
+}
+
+
+.img-view a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: transparent;
+    color: #fff;
+    padding: 9px 29px;
+    text-decoration: none;
+    font-size: 17px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.portfolio-para:hover .port-img::after ,.portfolio-para:hover .img-view a{
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio_Carousel .carousel-indicators {
+    display: none;
+}
+
+#myCarousel a.carousel-control-prev {
+    position: absolute;
+    left: 20px;
+    top: 115px;
+}
+
+#myCarousel a.carousel-control-next { 
+    position: absolute;
+    right: 20px;
+    top: 115px;
+}
+
+#myCarousel .carousel-control-next,
+#myCarousel .carousel-control-prev {
+    width: 60px;
+    height: 60px;
+    background: #29426c;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    top: 42%;
+    border-radius: 30px;
+}
+
+#myCarousel .carousel-control-prev:hover,
+#myCarousel .carousel-control-next:hover,
+#myCarousel .carousel-control-prev:focus,
+#myCarousel .carousel-control-next:focus {
+    background: #f2db18;
+    color: #fff;
+}
+
+/* ===== Portfolio Section Start Here ==== */
+
+/* ===== Business Section Start Here ===== */
+.business-item .icon {
+    float: left;
+    margin-right: 13px;
+}
+.business-content h1 {
+    display: inline-block;
+    color: #29426c;
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 42px;
+}
+.business-content p{
+    font-size: 19px;
+    font-weight: bold;
+    color: #f2db18;
+}
+/* ===== Business Section End Here ===== */
+
+/* ====== Team Section Start Here ======= */
+.team .team_Carousel .carousel-caption {
+    position: inherit;
+    padding: 0;
+}
+.team-item img{
+    border: 14px solid #eee;
+    width: 100%;
+    height: auto;
+    border-radius: 50%; 
+}
+
+.team-item {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    position: relative;
+}
+.team-item .team-social {
+    background: #082a63de;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 14px solid #f2db18;
+    line-height: 270px;
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.team-item:hover .team-social{
+    opacity: 1;
+    visibility: visible;
+}
+
+.team-social a{
+    width: 40px;
+    margin: 0 5px;
+}
+.team-social a:hover{
+    background: #f2db18;
+    color: #fff;
+}
+.team_Carousel .carousel-indicators {
+    bottom: -70px;
+    align-items: center;
+    color: #000;
+}
+.team_Carousel .carousel-indicators .active {
+    background-color: #fff;
+    padding: 2px;
+    width: 7px;
+    height: 7px;
+    border: #183971 solid 4px;
+}
+
+.team_Carousel .carousel-indicators li {
+    background-color: #f2db18;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+
+
+#team .carousel-control-next,
+#team .carousel-control-prev {
+     display: none;
+}
+
+/* ====== Team Section End Here ======= */
+
+/* ====== Testimonial Section Start Here ===== */
+.testimonial-item p {
+    border: 2px solid #f2db18;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.testimonial-item img {
+    float: left;
+    margin-right: 20px;
+}
+.testimonial-item span {
+    display: inline-block;
+    font-size: 26px;
+    margin-top: 46px;
+}
+.testimonial_Carousel .carousel-indicators {
+    bottom: 21px;
+    margin-right: 0px;
+}
+.testimonial_Carousel .carousel-indicators li {
+    background-color: #f2db18;
+    width: 15px;
+    height: 15px;
+}
+.testimonial_Carousel .carousel-indicators .active {
+    background-color: #4231bd;
+}
+#testimo .carousel-control-next,
+#testimo .carousel-control-prev {
+     display: none;
+}
+/* ====== Testimonial Section End Here ===== */
+
+/* ====== Contact Section Start Here */
+.contact-form form input.input-txt{
+    width: 100%;
+    margin-bottom: 17px;
+    border: none;
+    border-bottom: 1px solid #1d1d1d;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    font-size: 19px;
+    outline: none;
+}
+.contact-form form textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #1d1d1d;
+    font-size: 19px;
+    padding-top: 10px;
+}
+.contact-form form .submit-btn input {
+    padding: 19px 80px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background: #f2db18;
+    border: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.contact-form form .submit-btn input:hover {
+    background: #1d1d1d;
+}
+/* ====== Contact Section End Here */
+
+/* ======= footer section Start Here ========= */
+.footer-top {
+    padding: 60px 0;
+    background: url(images/footer_bg.jpg) no-repeat center center / 100% 100%;
+}
+.footer-top-item h3 {
+    font-size: 21px;
+    font-weight: bold;
+}
+.footer-top-item .icon a {
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    transition: all 0.4s ease;
+}
+.footer-top-item .icon a:hover {
+    color: #f2db18;
+}
+.footer-top-item p {
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.footer-top-item .footer-social ul{
+    display: flex;
+    flex-flow: nowrap row;
+    
+}
+.footer-top-item .footer-social ul li{
+    padding-right: 13px;
+
+}
+.footer-top-item .footer-social ul li a i{
+    display: inline-block;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+
+}
+.footer-top-item .footer-social ul li a:hover i{
+    background: #f2db18;
+    color: #fff;
+
+}
+.footer-top-item .footer-link ul li{
+    margin-top: 8px;
+}
+.footer-top-item .footer-link ul li a{
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+.footer-top-item .footer-link ul li a:hover{
+    color: #7d7d7d;
+}
+.footer-top-item form input[type="submit"] {
+    margin-top: 20px;
+    padding: 12px 58px;
+    background: #f2db18;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.4s ease;
+}
+.footer-top-item form input[type="submit"]:hover {
+    background: #1d1d1d;
+}
+/* ======= footer section End Here ========= */
